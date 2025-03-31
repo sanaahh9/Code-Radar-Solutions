@@ -1,15 +1,12 @@
-#include <stdio.h>
-
-int main() {
-    int N;
-    scanf("%d", &N);
-
-    for (int i = N; i > 0; i--) {
-        for (int j = 0; j < 1; j++) {
+#include <stdioh>
+int main(){
+    int n,i,j,k;
+    scanf("%d", &n);
+    for(i = 1; i <=n; i++){
+        for(j = 1; j <= n-i; j++){
             printf("*");
         }
-        printf("\\n");
-    } 
-
-    return 0;
+        printf(" ");
+    }
+    printf("\n");
 }
