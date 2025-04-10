@@ -1,15 +1,12 @@
 #include <stdio.h>
 int main() {
-int a,b;
-scanf("%d %d", &a, &b);
-if(a > b){
-    printf("First");
-}
-else if(b > a){
-    printf("Second");
+int a;
+scanf("%d", &a);
+if(a >= 1 && a<= 100){
+    printf("In Range");
 }
 else{
-    printf("Equal");
+    printf("Out of Range");
 }
     return 0;
 }
